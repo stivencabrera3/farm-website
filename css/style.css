@@ -1,0 +1,75 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Montserrat
+}
+/* Side nav basic styling */
+#side-nav {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: rgb(60, 73, 43);
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Sidenav links and button */
+
+#side-nav a, .dropdown-btn {
+  padding: 1rem;
+  text-decoration: none;
+  font-size: 20px;
+  color: #EBDFD1;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  transition: all .2s ease
+}
+
+.dropdown-btn::after {
+  content: '+';
+  float: right;
+  padding-right: 1.5rem;
+  font-size: 1.1rem;
+}
+.dropdown-btn:active::after{
+  content: '-';
+  font-size: 1.1rem;
+}
+#side-nav a:hover, .dropdown-btn:hover {
+  color: rgb(240, 199, 152)
+}
+
+.dropdown-container {
+  padding-left: .7rem;
+  background: rgb(77, 94, 55);
+  width: 0;
+  opacity: 0;
+  transition: all .2s ease-in;
+  display: none;
+  
+}
+
+.dropdown-container a {
+  border: 3px solid red;
+}
+
+.search input {
+  width: 50%;
+  padding: 2rem !important;
+}
+
+
