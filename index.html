@@ -17,7 +17,7 @@
      <a href="index.html"><img src="./images/farm-logo.png" alt="Company logo"></a>
 
     <a href="#">HOME</a>
-    <button class="dropdown-btn">OUR FARM</button>
+    <button onclick="activeToggle()" class="dropdown-btn">OUR FARM</button>
     
     <div class="dropdown-container">
       <a href="#">About Us</a>
@@ -29,12 +29,16 @@
     <a href="#">OUR PRODCUTS</a>
     <a href="#">SHOP</a>
     <a href="#">CONTACT</a>
-     <!-- Search Bar -->
-     <div class="search">
-       <input type="search" name="search" id="search" placeholder="Search...">
 
-       <i class="fas fa-search"></i>
-     </div>
+
+     <!-- Search Bar -->
+     <form action="#">
+       <input autocomplete="off" type="search" name="search" id="search" placeholder="Search...">
+       <button class="fas fa-search search-btn"></button>
+     </form>
+     
+
+     
     </nav>
 
 

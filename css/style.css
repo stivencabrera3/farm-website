@@ -20,6 +20,7 @@
   background: rgb(60, 73, 43);
   overflow-x: hidden;
   padding-top: 20px;
+  
 }
 
 /* Sidenav links and button */
@@ -67,9 +68,47 @@
   border: 3px solid red;
 }
 
-.search input {
-  width: 50%;
-  padding: 2rem !important;
+/* Search field */
+form {
+ 
+  text-align: center;
+}
+form #search {
+  
+  padding: .75rem 1.2rem;
+  border: 2px solid#576148;
+  background: rgb(60, 73, 43);
+  margin-top: 2rem;
+  font-size: 1rem;
+  outline: none;
+  color: #576148;
+  
+
+}
+ ::placeholder {
+    color: #576148;
+    
 }
 
+.search-btn {
+  position: relative;
+  right: 40px;
+  color: #576148;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+ 
 
+}
+
+.search-btn:hover {
+  color: rgb(240, 199, 152);
+}
+  /* removes default clear field button in search input */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
