@@ -85,8 +85,6 @@ button .minus {
 }
 
 
-
-
 /* Search field */
 form {
  
@@ -170,3 +168,94 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     
   }
 
+    /* Grid */
+
+   #home-boxes {
+     display: grid;
+     /* background: red; */
+     grid-template-columns: repeat(2, minmax(0, 1fr));
+     grid-template-rows: auto;
+   }
+
+   .image-card{
+     object-fit: contain;
+   }
+
+   .image-card-1{
+     background: url('../images/image-card-1.jpg') no-repeat center center/cover;
+   }
+   .image-card-2 {
+     background: url('../images/image-card-2.jpg') no-repeat center center/cover;
+   }
+   
+
+   .text-card {
+     background:rgb(252, 246, 237);
+     padding: 3rem;
+    
+   }
+   .text-card h3 {
+     margin-bottom: 2rem;
+     font-size: 2.5rem;
+     color: rgb(240, 188, 130);
+   }
+   .text-card p {
+     line-height: 2;
+     margin-bottom: 4rem;
+   }
+   .btn {
+     text-decoration: none;
+     color: rgb(240, 188, 130);
+     text-transform: uppercase;
+     font-size: 1rem;
+     letter-spacing: 2px;
+     border: 2px solid rgb(240, 188, 130);
+     padding: 0.75rem 1rem;
+     transition: all ease 0.3s;
+     display: inline-block;
+     
+    
+   }
+   .btn:hover{
+     color: rgb(124, 124, 124);
+     border: 2px solid rgb(124, 124, 124);
+   }
+
+   .divider {
+     width: 30%;
+     height: 2px;
+     border:none;
+     background-color: rgb(240, 188, 130);
+     margin-bottom: 2rem;
+   }
+
+    /* Home About Section */
+    main #home-about{
+   
+      height: 80vh;
+      background: #576148;
+      color: #EBDFD1;
+      text-align: center;
+
+    }
+    .home-about-divider{
+      margin: auto;
+     margin-bottom: 2rem; 
+    }
+   main #home-about h2 {
+     font-size: 3rem;
+     padding: 5rem 0 2rem 0;
+
+   }
+
+   main #home-about p {
+     line-height: 2;
+     font-size: 1rem;
+     padding: 0 3rem 3rem 2rem;
+
+
+   }
+
+   .big-btn{
+     padding: 1rem 2.3rem;
+   }
