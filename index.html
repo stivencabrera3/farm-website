@@ -63,7 +63,81 @@
 
  </div>
 
+
+ <!-- Top Nav (1074px or less) -->
+ <nav id="top-nav">
+    <a href="index.html"><img src="./images/farm-logo.png" alt="Company logo"></a>
+
+    <span id = "close-menu" class="open-slide">
+        <a href="#" onclick="openSlideMenu()">
+            <i class="fas fa-bars"></i>
+        </a>
+      </span>
+
+
+  <div id="top-side-nav">
+      
+        <a href="index.html"><img src="./images/farm-logo.png" alt="Company logo"></a>
+    
+        <a class="nav-active" href="index.html">HOME</a>
+    
+        <button class="dropdown-btn" onclick="activeNav()">OUR FARM
+    
+          <i id="minus" class="fas fa-minus minus"></i>
+          <i id="plus" class="fas fa-plus plus"></i>
+    
+        </button>
+        
+        <div class="dropdown-container">
+          <a href="#">About Us</a>
+          <a href="#">Visit Us</a>
+          <a href="#">Employment</a>
+          <a href="#">Gallery</a>
+        </div>
+    
+        <button onclick="activeNav2()" class="dropdown-btn">OUR PRODUCTS
+    
+          <i id="minus2" class="fas fa-minus minus"></i>
+          <i id="plus2" class="fas fa-plus plus"></i>
+    
+        </button>
+    
+        <div class="dropdown-container">
+          <a href="#">Availability</a>
+          <a href="#">Produce</a>
+          <a href="#">Meat & Eggs</a>
+          <a href="#">Where To Buy</a>
+          <a href="#">Wholesale</a>
+        </div>
+    
+    
+        <a href="#">SHOP</a>
+        <a href="#">CONTACT</a>
+    
+    
+        <!-- Search Bar -->
+        <form action="#">
+          <input autocomplete="off" type="search" name="search" id="search" placeholder="Search...">
+          <button class="fas fa-search search-btn"></button>
+        </form>
+        
+      
+    
+    </div>
+       
+
+
+
+
+
+
+
+
+  
+ </nav>
+
 <!-- Main Content -->
+
 <main>
 
     <!-- Header BG -->
@@ -111,13 +185,43 @@
 
     <hr class="divider home-about-divider">
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, necessitatibus commodi a hic error, cumque temporibus nihil libero quisquam officiis doloremque porro! Quas sed incidunt accusantium reprehenderit nisi iure, nulla facere facilis ducimus similique doloremque totam veniam exercitationem possimus libero soluta ratione consectetur, saepe fuga repellendus. Laborum tempore ad quas vel illo quam accusantium voluptatem, laboriosam officiis minus, magni numquam sit totam ut saepe sint. Aspernatur iusto suscipit qui quas, quasi ducimus asperiores ratione, unde aut, expedita velit tempora amet dolores saepe nihil voluptatibus quia! Rem amet esse totam magnam cumque eaque? Enim consectetur iure maiores, tenetur nostrum provident laboriosam.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur dignissimos non perferendis excepturi iste libero mollitia dicta eligendi, culpa ullam ducimus ut itaque fuga in exercitationem dolores laborum facilis repudiandae error. Quae cum officia labore doloremque laboriosam harum eius impedit ab sapiente, exercitationem voluptatibus corrupti sed qui debitis adipisci nobis perferendis officiis, vero ea ullam voluptatem. Esse voluptatibus mollitia assumenda obcaecati officia doloribus delectus consequatur! Deserunt cumque veritatis commodi harum vel incidunt ipsam beatae, dignissimos tempora, deleniti blanditiis id animi?</p>
 
     <a href="#" class="btn big-btn">Continue Reading</a>
     
   </section>
 
+  <!-- Products Preview -->
+  
+  <section id="home-products-preview">
+    <div class="product-card">
+     <a href="#"><img src="./images/product-card-1.jpg" alt="Carrots"></a> 
 
+      <div class="product-card-text">
+        
+        <h2>FRESH PRODUCE</h2>
+         
+         <hr class="divider product-card-divider">
+   
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere et doloribus aut, dignissimos maxime quis minus labore commodi esse odio, pariatur neque nostrum accusamus fugiat.</p>
+
+      </div>
+      
+    </div>
+    <div class="product-card">
+      <a href="#"><img src="./images/product-card-2.jpg" alt="Carrots"></a>
+
+      <div class="product-card-text">
+
+        <h2>FRESH PRODUCE</h2>
+        
+        <hr class="divider product-card-divider">
+  
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis quia harum quam vitae, tempora hic maxime ducimus repellat alias delectus quasi tenetur reprehenderit, voluptate assumenda!</p>
+
+      </div>
+    </div>
+  </section>
 
 </main>
 
