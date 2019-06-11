@@ -45,9 +45,24 @@
   }
 
 
+ const openMenu = function(){
+   let sideNav = document.getElementById('side-nav')
+   let main = document.querySelector('main')
+   let topNav = document.getElementById('top-nav')
+  
+   if (sideNav.style.display === 'none') {
 
+     sideNav.style.display = 'block'
+     main.style.marginLeft = '300px'
+     topNav.style.marginLeft = '300px'
 
-
+   } else {
+     sideNav.style.display = 'none'
+     main.style.marginLeft = '0'
+     topNav.style.marginLeft = '0'
+     
+   }
+ }
 
 
 //   const activeNav = function() {

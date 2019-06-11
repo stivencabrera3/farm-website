@@ -13,10 +13,11 @@
 /* Top Nav (Hidden for big screens) */
 #top-nav{
   display: none;
-  background: #576148;
+  background: rgb(60, 73, 43);
   justify-content: space-between;
   align-items: center;
   padding-right: 2rem;
+  transition: all .1s ease
 }
 
 #top-nav a img {
@@ -29,7 +30,7 @@
   font-size: 1.5rem;
 }
 
-#top-side-nav{
+/* #top-side-nav{
   height: 100%;
   width: 300px;
   position: fixed;
@@ -39,9 +40,9 @@
   background: rgb(60, 73, 43);
   overflow-x: hidden;
   padding-top: 20px;
-}
+} */
 
-#top-side-nav nav > a, .dropdown-btn {
+/* #top-side-nav nav > a, .dropdown-btn {
   padding: 1rem;
   text-decoration: none;
   font-size: 20px;
@@ -54,10 +55,13 @@
   cursor: pointer;
   outline: none;
   transition: all .2s ease
+} */
+
+
+/* Close Menu Invisible on Computers */
+#close-btn {
+  display: none;
 }
-
-
-
 
 /* Side nav basic styling */
 #side-nav {
@@ -193,6 +197,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
   main {
     margin-left: 300px;
+    transition: all .1s ease;
   }
 
   main .header-bg{
@@ -368,13 +373,46 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 /* Media Queries */
 
 @media screen and (max-width: 1075px){
+
+
   main {
     margin-left: 0;
   }
+
   #side-nav {
     display: none;
+    
   }
+
+  #side-nav nav > a, .dropdown-btn{
+    font-size: 1.1rem;
+  }
+
+  #side-nav nav a img {
+    display: none;
+  }
+
+  #close-btn {
+    display: block;
+    width: 300px;
+    
+  }
+  #close-btn a{
+    text-decoration: none;
+    color: #EBDFD1;
+    padding: 1rem;
+    background: #343a2a;
+    width: 300px;
+    
+  
+  }
+  #close-btn a i {
+    padding: 0 .5rem 0 .5rem
+  }
+
   #top-nav{
     display: flex;
   }
+
+
 }
