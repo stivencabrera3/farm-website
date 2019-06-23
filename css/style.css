@@ -506,6 +506,10 @@ footer a:hover{
     margin-left: 0;
   }
 
+  footer{
+    margin-left: 0;
+  }
+
   #side-nav {
 
    left: -300px;
