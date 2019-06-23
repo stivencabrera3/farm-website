@@ -17,7 +17,7 @@
   justify-content: space-between;
   align-items: center;
   padding-right: 2rem;
-  transition: all .1s ease
+  transition: all .3s ease
 }
 
 #top-nav a img {
@@ -74,6 +74,7 @@
   background: rgb(60, 73, 43);
   overflow-x: hidden;
   padding-top: 20px;
+  transition: 0.3s all ease
   
 }
 
@@ -197,9 +198,10 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
   main {
     margin-left: 300px;
-    transition: all .1s ease;
+    transition: all .3s ease;
   }
 
+  
   main .header-bg{
     background: url('../images/farm-header.bg.jpg') no-repeat center center/cover;
     height: 73vh;
@@ -370,6 +372,124 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
     }
 
+/* Quick Links Bar */
+
+#links-bar {
+  background: #8a8d86;
+  display: flex;
+  height: 35vh;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+
+}
+
+#links-bar a{
+  color: #EBDFD1;
+  text-decoration: none;
+}
+
+.links-bar-box{
+  padding: 1rem;
+  
+}
+
+.links-bar-box a i{
+ font-size: 2rem;
+ padding-bottom: 1rem;
+ transition: all .3s ease;
+}
+.links-bar-box a i:hover{
+  color: #b0b3c0
+}
+
+.links-bar-box a h3 {
+  font-size: 1.5rem;
+  letter-spacing: 1.5px;
+  padding-bottom: .3rem;
+
+}
+
+.links-bar-box a p{
+  font-size: 1rem;
+}
+
+/* Home: Visit us section */
+
+#home-visit-us{
+  background: #EBDFD1;
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem;
+}
+
+#home-visit-info{
+  flex: 1;
+}
+#home-visit-map{
+  flex: 1;
+}
+
+#home-visit-map iframe{
+  width: 80%;
+  min-width: 400px;
+}
+
+#home-visit-info {
+  margin: 4rem 0 0 4rem;
+  color: #8a8d86; 
+
+}
+
+#home-visit-info a{
+  text-decoration: none;
+  color: #8a8d86;
+}
+
+
+#home-visit-info h2{
+  font-size: 3rem;
+  padding-bottom: 4rem;
+  color: #576148;
+}
+
+#home-visit-info i {
+  padding-right: .75rem;
+}
+
+#home-visit-info p {
+  padding: .75rem;
+  font-size: 0.85rem;
+}
+
+/* Footer */
+footer {
+  margin-left: 300px;
+  transition: all .3s ease;
+  height: 7vh;
+  display: flex; 
+  background: #343a2a;
+}
+footer p {
+  align-self: center;
+  margin-left: 2rem;
+  font-size: .75rem;
+  color: rgb(240, 199, 152);
+ 
+
+}
+footer p a {
+  text-decoration: none;
+  color: rgb(240, 199, 152);
+  padding: 1rem;
+  transition: .3s all ease
+}
+
+footer p a:hover {
+  color: rgb(248, 235, 211);
+}
+
+
 /* Media Queries */
 
 @media screen and (max-width: 1075px){
@@ -380,7 +500,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   }
 
   #side-nav {
-    display: none;
+
+   left: -300px;
     
   }
 
