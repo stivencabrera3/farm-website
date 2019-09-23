@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon (1).ico">
+  <title>Our Farm | Telfer Organic Farm</title>
+</head>
+<body>
+  <div id="side-nav">
+      <nav>
+    
+        <!-- Close Menu Button on Mobile -->
+        <div id="close-btn">  
+        
+          <a id="close-menu-btn" href="#" onclick="closeMenu()">
+            
+            <i class="far fa-times-circle"></i>
+            CLOSE MENU
+    
+          </a>
+    
+    
+        </div>
+    
+        <a href="index.html"><img src="./images/farm-logo.png" alt="Company logo"></a>
+    
+        <a class="nav-active" href="index.html">HOME</a>
+    
+        <button class="dropdown-btn" onclick="activeNav()">OUR FARM
+    
+          <i id="minus" class="fas fa-minus minus"></i>
+          <i id="plus" class="fas fa-plus plus"></i>
+    
+        </button>
+        
+        <div class="dropdown-container">
+          <a href="#">About Us</a>
+          <a href="#">Visit Us</a>
+          <a href="#">Employment</a>
+          <a href="#">Gallery</a>
+        </div>
+    
+        <button onclick="activeNav2()" class="dropdown-btn">OUR PRODUCTS
+    
+          <i id="minus2" class="fas fa-minus minus"></i>
+          <i id="plus2" class="fas fa-plus plus"></i>
+    
+        </button>
+    
+        <div class="dropdown-container">
+          <a href="about.html">Availability</a>
+          <a href="#">Produce</a>
+          <a href="#">Meat & Eggs</a>
+          <a href="#">Where To Buy</a>
+          <a href="#">Wholesale</a>
+        </div>
+    
+    
+        <a href="#">SHOP</a>
+        <a href="#">CONTACT</a>
+    
+    
+        <!-- Search Bar -->
+        <form action="#">
+          <input autocomplete="off" type="search" name="search" id="search" placeholder="Search...">
+          <button class="fas fa-search search-btn"></button>
+        </form>
+        
+        </nav>
+    
+    </div>
+    
+    
+    <!-- Top Nav (1074px or less) -->
+    <nav id="top-nav">
+      <a href="index.html"><img src="./images/farm-logo.png" alt="Company logo"></a>
+
+      <span id = "close-menu" class="open-slide">
+          <a id="menu-button" href="#" onclick="openMenu()">
+              <i class="fas fa-bars"></i>
+          </a>
+        </span>
+    
+    </nav>
+
+    <main>
+      <!-- About Text Header -->
+      <div id="about-header">
+
+        <h2>OUR FARM</h2>
+        <h3>A beautiful place to work and visit</h3>
+
+      </div>
+
+      <!-- About Text -->
+
+      <div id="about-text">
+
+        <p class="py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae asperiores voluptas ea sit delectus quo a quidem? Soluta libero alias ea eius sed natus repudiandae molestiae? Quod dolorum doloremque iure repellendus nisi harum architecto impedit dolor, consequuntur qui corrupti tempora, cum voluptatibus facilis labore voluptate ipsa illum. Exercitationem vel enim voluptatum ipsam repellat animi quibusdam, nulla vitae quis possimus in hic cumque, autem molestiae expedita est. Obcaecati quidem culpa totam doloremque sequi nulla quisquam voluptatibus corporis recusandae. Saepe, porro eligendi. Quos blanditiis unde quibusdam. Fugit aperiam minus perferendis nihil repellat fuga deserunt, doloremque ab velit numquam quod incidunt veritatis quas.</p>
+
+        <br> 
+        <p class="py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae asperiores voluptas ea sit delectus quo a quidem? Soluta libero alias ea eius sed natus repudiandae molestiae? Quod dolorum doloremque iure repellendus nisi harum architecto impedit dolor, consequuntur qui corrupti tempora, cum voluptatibus facilis labore voluptate ipsa illum. Exercitationem vel enim voluptatum ipsam repellat animi quibusdam, nulla vitae quis possimus in hic cumque, autem molestiae expedita est. Obcaecati quidem culpa totam doloremque sequi nulla quisquam voluptatibus corporis recusandae. Saepe, porro eligendi. Quos blanditiis unde quibusdam. Fugit aperiam minus perferendis nihil repellat fuga deserunt, doloremque ab velit numquam quod incidunt veritatis quas.</p>
+
+        <br>
+        <p class="py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae asperiores voluptas ea sit delectus quo a quidem? Soluta libero alias ea eius sed natus repudiandae molestiae? Quod dolorum doloremque iure repellendus nisi harum architecto impedit dolor, consequuntur qui corrupti tempora, cum voluptatibus facilis labore voluptate ipsa illum. Exercitationem vel enim voluptatum ipsam repellat animi quibusdam, nulla vitae quis possimus in hic cumque, autem molestiae expedita est. Obcaecati quidem culpa totam doloremque sequi nulla quisquam voluptatibus corporis recusandae. Saepe, porro eligendi. Quos blanditiis unde quibusdam. Fugit aperiam minus perferendis nihil repellat fuga deserunt, doloremque ab velit numquam quod incidunt veritatis quas.</p>
+
+      </div>
+
+      <!-- About Farmer Section  -->
+
+      <div id="about-farmer">
+
+        <div id="about-farmer-img">
+
+          <img src="./images/farm-family.jpg" alt="Family of 4 walking and holding hands">
+
+        </div>
+
+        <div id="about-farmer-text">
+
+          <h3>The Farmers</h3>
+
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit est voluptatem harum laborum iste expedita ducimus id, fugiat deleniti itaque neque molestias recusandae perferendis eum quam nostrum, temporibus maxime non. Autem reprehenderit maxime ab veniam deserunt recusandae quia eum suscipit. Et vitae commodi facilis ex distinctio exercitationem molestias sint, debitis architecto nesciunt qui nobis aut ea tempore impedit optio voluptate quo, itaque laudantium dignissimos similique nihil quisquam. Maiores dicta minus cupiditate delectus eligendi provident officiis accusamus optio sed quam! Hic alias debitis, amet eos soluta facere similique beatae nostrum. Saepe modi perferendis sapiente asperiores odit consequuntur tenetur praesentium rerum ab.</p>
+
+        </div>
+
+        
+      </div>
+
+      <section id="about-boxes">
+
+        <div id="text-card">
+
+          <h3>History & Vision</h3>
+
+          <p>A center for sustainable agriculure in our community</p>
+
+          <hr class="divider">
+
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis facere natus dolorem reiciendis blanditiis doloribus veniam, consequatur excepturi nostrum laudantium! Earum excepturi hic quo aliquam itaque, animi facere iure. Nisi obcaecati officia repellendus excepturi, non numquam repudiandae expedita labore adipisci ipsa dignissimos, esse temporibus ipsam soluta. Et, tempora qui. Magnam laudantium sunt quaerat ex. Sunt quam tempore harum delectus, inventore officiis libero nulla, blanditiis eaque facere magnam sint aliquam voluptatem, odio omnis. Odit eum enim neque, vero, cupiditate accusamus explicabo blanditiis officia temporibus aperiam commodi modi quisquam placeat. A sit modi qui sunt dicta quo, illo neque labore eligendi ratione.</p>
+
+          <br>
+
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio repellat eligendi ullam quaerat enim eaque, laboriosam natus optio corporis. Inventore, atque. Sapiente magnam sit autem quam pariatur. Consectetur fugit dignissimos tenetur sunt placeat doloribus eum ad deserunt eveniet, tempore repellendus dolor fuga maiores perferendis odit aspernatur quisquam quidem molestias totam esse neque asperiores in laboriosam. Nobis, temporibus. Repudiandae deleniti aperiam iure. Incidunt dolor, maxime necessitatibus nisi mollitia, reiciendis ullam sunt consectetur facere facilis magnam? Voluptatibus optio velit facilis eveniet blanditiis itaque libero ipsa porro sed excepturi sunt maxime explicabo, omnis expedita voluptate dicta? Corrupti ipsum ratione iste quae, tenetur aut!</p>
+
+        </div>
+
+        <div id="about-image-card-1"></div>
+
+        <div id="text-card">
+
+            <h3>Our Values</h3>
+
+            <p>Working in harmony with the nature that surronds us</p>
+  
+            <hr class="divider">
+  
+            <ul>
+
+              <li> <i class="fas fa-leaf"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit fugit, dolor repudiandae consequuntur molestias fuga quae porro ducimus at iure enim reiciendis quaerat pariatur nulla.</li>
+
+              <li> <i class="fas fa-leaf"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, neque!</li>
+
+              <li> <i class="fas fa-leaf"></i>Lorem ipsum dolor sit amet consectetur.</li>
+
+              <li> <i class="fas fa-leaf"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, similique laudantium. Hic mollitia veniam facere fugiat voluptate doloremque autem quaerat.</li>
+
+              <li> <i class="fas fa-leaf"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores maiores sit, soluta assumenda porro vel vitae. Est illo omnis, earum similique voluptatum incidunt asperiores repellendus?</li>
+
+              <li><i class="fas fa-leaf"></i>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, atque eum inventore tenetur error qui corporis, harum facilis ab delectus quis quisquam aperiam itaque beatae fugit cupiditate vel?</li>
+
+            </ul>
+            
+  
+          </div>
+
+          <div id="about-image-card-2"></div>
+
+      </section>
+
+    </main>
+
+
+
+
+  <!-- Footer -->
+  <footer>
+    <div>
+
+      <p>Copyright 2019 Telfer Organic Farm <span id="footer-divider">|</span> </p> <a href="#">Privacy Policy  <span id="footer-divider">|</span> </a> <a href="#">Contact Us</a>
+
+    </div>
+  </footer>  
+  
+  <script src="main.js"></script>
+</body>
+</html>
